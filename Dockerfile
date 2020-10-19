@@ -1,4 +1,4 @@
-FROM php:7.3-apache
+FROM php:7.4-apache
 MAINTAINER Jiri Dedic <jiri.dedic@pilulka.cz>
 
 RUN apt-get -y update
@@ -22,7 +22,8 @@ RUN apt-get install -y \
     libkrb5-dev \
     libzip-dev \
     uuid-dev \
-    rsyslog
+    rsyslog \
+    libonig-dev
 
 RUN docker-php-ext-install gd soap pdo_mysql mysqli intl pcntl zip xmlrpc bcmath
 

@@ -32,3 +32,8 @@ Will produce `Hello World!` on container start.
 - enable some services on container start (e.g. `supervisor`)
 - run some custom scripts on container build
 - ...
+
+*VERSIONS*
+
+- v1.0 - php 7.3 (apache)
+- v1.1 - php 7.4 (apache)
